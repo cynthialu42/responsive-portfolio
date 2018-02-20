@@ -192,24 +192,21 @@ input[type=submit]{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.portfolio-img {
-    width: 93%;
-    margin: 20px 0px;
-
-}
-
 .portfolio-img-wrapper {
-    width: 50%;
+    width: 47%;
     position: relative;
     
 }
+.portfolio-img {
+    width: 100%;
+    margin: 20px 0px;
 
+}
 .over-label {
     background: teal;
     position: absolute;
     bottom: 40px;
-    width: 93%;
+    width: 100%;
     height: 10%;
     opacity: .9;
     color: white;
@@ -271,5 +268,81 @@ a:hover {
 }
 
 @media (max-width: 768px){
+    .content-wrapper {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 140px;
+        flex-wrap: wrap;
+    }
+    .left-column {
+        width: 100%;
+        background: #ffffff;
+        padding: 25px;
+        margin-top: 45px;
+        border: 1px solid #dddddd;
     
+    }
+    .right-column {
+        width: 100%;
+        height: 150px;
+        background: #ffffff;
+        padding: 25px;
+        margin-top: 45px;
+        border: 1px solid #dddddd;
+    }
+    .profile-img{
+        float: left;
+        margin: 0px 15px 15px 0px;
+        width: 50%;
+    }
+    .contact-img {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 30%;
+        margin-top: 20px;
+    
+    }
+
+    .icon {
+        display: flex;
+        justify-content: left;
+        margin: auto;
+        width: 100%;
+    }
+
+    .portfolio-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .portfolio-img-wrapper {
+        width: 47%;
+        position: relative;
+        
+    }
+    .portfolio-img {
+        width: 100%;
+        margin: 20px 0px;
+    
+    }
+    
+    .over-label {
+        background: teal;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        height: 10%;
+        opacity: .9;
+        color: white;
+        padding: 10px 0px;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
