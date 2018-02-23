@@ -4,6 +4,10 @@
     background-image: url('../images/dust_scratches.png');
 }
 
+.cyl-hover:hover {
+    opacity: .8;
+}
+
 /* Navigation */
 .content-wrapper {
     width: 85%;
@@ -21,7 +25,7 @@
     width: 100%;
     border-bottom: 2px solid #cccccc;
     border-top: 17px solid white;
-  }
+}
 
 .header-content {
     width: 85%;
@@ -29,9 +33,9 @@
     display: flex;
     justify-content: space-between;
     background: #ffffff;
-  }
+}
 
-  .name {
+.name {
     background:#4aaaa5;
     width: 220px;
     height: 80px;
@@ -42,18 +46,18 @@
     color: white;
     font-size: 30px;
     font-weight: bold;
-    
-  }
-  
-  .nav-wrapper{
+
+}
+
+.nav-wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 270px;
-  }
+}
 
 
-  .nav-items {
+.nav-items {
     display: flex;
     background:#ffffff;
     height: 80px;
@@ -63,7 +67,11 @@
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     font-size: 17px;
-  }
+}
+
+.nav-links {
+    text-decoration: none;
+}
 
 /* Left Column Styling */
 .title {
@@ -95,44 +103,8 @@
     line-height: 1.6;
     margin-bottom: 20px;
 }
-.right-column {
-    width: 25%;
-    height: 150px;
-    background: #ffffff;
-    padding: 25px;
-    margin-top: 45px;
-    border: 1px solid #dddddd;
-}
 
-.contact-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-
-}
-
-.icon {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 85%;
-}
-
-.connect-with-me {
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0px 10px 0px;
-}
-
-
-
-
-
-input[type=text]{
+.cyl-txt-input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -144,7 +116,7 @@ input[type=text]{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-textarea{
+.cyl-txt-area{
     width: 100%;
     height: 300px;
     padding: 12px 20px;
@@ -158,7 +130,7 @@ textarea{
     resize: vertical;
 }
 
-input[type=submit]{
+.cyl-submit{
     width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -208,12 +180,38 @@ input[type=submit]{
     
 }
 
-.cyl-hover:hover {
-    opacity: .8;
+/* Right Column Styling (Connect With Me)*/
+.right-column {
+    width: 25%;
+    height: 150px;
+    background: #ffffff;
+    padding: 25px;
+    margin-top: 45px;
+    border: 1px solid #dddddd;
 }
 
-.nav-links {
-    text-decoration: none;
+.contact-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 85%;
+}
+
+.connect-with-me {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
 }
 
 /* Footer */
@@ -234,6 +232,7 @@ input[type=submit]{
     border-top: 5px solid #4aaaa5;
 }
 
+/* Media Queries */
 @media screen and (max-width: 980px) {
     .profile-img{
         margin: 0px 15px 15px 0px;
